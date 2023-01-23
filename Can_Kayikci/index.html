@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Game</title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Heebo:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="mystyle.css">
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- Jquery UI -->
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="index.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <div id="info">
+            <h4>CAN KAYIKCI - PROJECT</h4>
+        </div>
+        <div id="puzzle">
+            <div class="row1">
+                <div class="word1 word2"> <span class="hint">S</span></div>
+                <div class="word1"><span class="hint">O</span></div>
+                <div class="word1 word3"><span class="hint">M</span></div>
+                <div class="word1"><span class="hint">E</span></div>
+            </div>
+            <div class="row2">
+                <div class="word2"><span class="hint">U</span></div>
+                <div class="word3"><span class="hint">O</span></div>
+                <div class="word5"><span class="hint">U</span></div>
+            </div>
+            <div class="row3">
+                <div class="word2"><span class="hint">M</span></div>
+                <div class="word3"><span class="hint">U</span></div>
+                <div class="word5"><span class="hint">S</span></div>
+            </div>
+            <div class="row4">
+                <div class="word4 word3"><span class="hint">S</span></div>
+                <div class="word4"><span class="hint">U</span></div>
+                <div class="word4 word5"><span class="hint">E</span></div>
+            </div> 
+            <div class="row5">
+                <div class="word6"><span class="hint">M</span></div>
+                <div class="word6"><span class="hint">U</span></div>
+                <div class="word6"><span class="hint">S</span></div>
+                <div class="word6 word3"><span class="hint">E</span></div>
+            </div>
+            <div class="footer">
+                <div id="help"><i class="icon fa-solid fa-lightbulb"></i></div>
+                <div id="theword"></div>
+            </div>
+            
+        </div>
+        <div id="circle">
+            <div class="letter" id="S" ><span>S</span></div>
+            <div class="letter" id="E"><span>E</span></div>
+            <div class="letter" id="M"><span>M</span></div>
+            <div class="letter" id="O"><span>O</span></div>
+            <div class="letter" id="U"><span>U</span></div>
+            <div id="refresh"><i class="fa-solid fa-shuffle"></i></div>
+        </div>
+    </div>
+</body>
+</html>

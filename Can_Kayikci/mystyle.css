@@ -1,0 +1,153 @@
+*{margin: 0px; padding: 0px; box-sizing: border-box; font-family: 'Heebo', sans-serif;}
+.container{
+    background: url(./image2.jpg);
+    width: 450px;
+    height: 850px;
+    margin: 75px auto;
+    position: relative;
+}
+#info{
+    color: rgb(0, 225, 255);
+    font-size: 24px;
+    text-align: center;
+    padding-top: 16px;
+    width: 100%;
+    position: absolute;
+
+}
+#puzzle{
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 30px;
+    margin: 0px auto;
+    position: relative;
+    width: 350px;
+    height: 500px;
+    color: white;
+    padding-top: 100px;
+}
+#circle{
+    background-color: rgba(255, 255, 255);
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: 30px auto;
+    position: relative;
+    display: flex;
+    border: 2px solid black;
+}
+.letter, #refresh{
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+}
+#refresh{
+    left: 110px;
+    top: 110px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    cursor: pointer;
+}
+#help:hover .icon{
+    transform:scale(150%);
+    color: yellow;
+    transition: 250ms ease-in-out;
+}
+#help:hover{
+    background-color: #0700C4;
+}
+#help{
+    background-color: #87ceeb;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    position: absolute;
+    right: -30px;
+    bottom: -50px;
+    
+}
+.icon{
+    font-size: 20px;
+    text-align: center;
+    transition: 250ms ease-in-out;
+}
+
+
+@keyframes hovereffect{
+    from{
+        color: white;
+        font-size: 16px;
+    }
+    to{
+        color: yellow;
+        font-size: 20px;
+    }
+}
+/* WORDING */
+.row1{
+    display: flex;
+    margin-left: 50px;
+}
+.row2{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+.row3{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+.row4{
+    display: flex;
+    justify-content: right;
+}
+.row5{
+    display: flex;
+    margin-right: 120px;
+}
+.row5 div:first-of-type{
+margin-left: 0px;
+}
+.word1,.word2,.word3,.word4,.word5,.word6{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 10%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 40px;
+    opacity: 1;
+}
+
+.hint{
+    color: black;
+    display: none;
+    opacity: 0.5;
+}
+.letter{
+    line-height: 80px;
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+.footer{
+    text-align: center;
+    height: 100px;
+    padding-top: 50px;
+}
+#theword{
+    display: none;
+    background-color: #0052FF;
+    border-radius: 30%;
+    padding: 10px;
+    font-size: 24px;
+    width: 100px;
+    position: relative;
+}
